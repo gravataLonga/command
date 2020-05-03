@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+if (is_file(__DIR__ . '/vendor/autoload.php') === true) {
+    include_once __DIR__ . '/vendor/autoload.php';
+}
+
+$app = require __DIR__ . "/bootstrap/app.php";
+
+$app->run();
